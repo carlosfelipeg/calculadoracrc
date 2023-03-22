@@ -30,7 +30,9 @@ function calculateCrc() {
     // Retorna el residuo
     const crcResult = message.slice(-generator.length + 1).join("");
     const crcResultElement = document.getElementById("crc-result");
+    const crcResultFrameElement = document.getElementById("crc-result-frame");
     crcResultElement.innerHTML = `El código de redundancia cíclica (CRC) es: ${crcResult}`;
+    crcResultFrameElement.innerHTML = `la trama transmitida es: ${data + crcResult}`;
 }
 
 // Agrega evento al botón "Calcular"

@@ -55,3 +55,9 @@ h1 {
     text-align: center;
     font-weight: bold;
 }
+
+#crc-result-frame {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+}
